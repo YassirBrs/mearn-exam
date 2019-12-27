@@ -11,7 +11,7 @@ export default class EditExercise extends Component {
     this.onChangeGender = this.onChangeGender.bind(this);
     this.onChangeDob = this.onChangeDob.bind(this);
     this.onChangeNews = this.onChangeNews.bind(this);
-    this.onChangePhoto = this.onChangePhoto.bind(this);
+    this.onChangeEmail = this.onChangeEmail.bind(this);
     this.onChangePhoto = this.onChangePhoto.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
@@ -127,8 +127,8 @@ export default class EditExercise extends Component {
             <label>Date de naissance: </label>
             <div>
               <DatePicker
-                selected={this.state.date}
-                onChange={this.onChangeDate}
+                selected={this.state.dob}
+                onChange={this.onChangeDob}
               />
             </div>
           </div>
